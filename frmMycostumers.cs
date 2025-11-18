@@ -1,0 +1,25 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace GymRoom
+{
+    public partial class frmMycostumers : Form
+    {
+        public frmMycostumers()
+        {
+            InitializeComponent();
+        }
+
+        private void frmMycostumers_Load(object sender, EventArgs e)
+        {
+
+        }
+    }
+}
