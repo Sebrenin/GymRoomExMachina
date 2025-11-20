@@ -17,7 +17,17 @@ namespace GymRoom
             InitializeComponent();
         }
 
+        public void ReloadNotes()
+        {
+            // Aquí va tu código para recargar las notas desde la base de datos.
+            // Incluso puede estar vacío de momento:
+        }
         private void pictureBox10_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void flpNotes_Paint(object sender, PaintEventArgs e)
         {
 
         }

@@ -30,11 +30,15 @@
         {
             flpNotes = new FlowLayoutPanel();
             panel1 = new Panel();
+            label9 = new Label();
+            label8 = new Label();
+            pictureBox10 = new PictureBox();
+            pictureBox9 = new PictureBox();
             panel2 = new Panel();
-            label1 = new Label();
-            label2 = new Label();
             pictureBox1 = new PictureBox();
+            label2 = new Label();
             pictureBox2 = new PictureBox();
+            label1 = new Label();
             panel3 = new Panel();
             pictureBox3 = new PictureBox();
             label3 = new Label();
@@ -47,16 +51,14 @@
             label6 = new Label();
             panel5 = new Panel();
             panel6 = new Panel();
-            pictureBox7 = new PictureBox();
-            pictureBox8 = new PictureBox();
-            label7 = new Label();
             richTextBox1 = new RichTextBox();
-            pictureBox9 = new PictureBox();
-            pictureBox10 = new PictureBox();
-            label8 = new Label();
-            label9 = new Label();
+            label7 = new Label();
+            pictureBox8 = new PictureBox();
+            pictureBox7 = new PictureBox();
             flpNotes.SuspendLayout();
             panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox10).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox9).BeginInit();
             panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
@@ -68,10 +70,8 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
             panel5.SuspendLayout();
             panel6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox8).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox9).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox10).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
             SuspendLayout();
             // 
             // flpNotes
@@ -88,6 +88,7 @@
             flpNotes.Size = new Size(306, 404);
             flpNotes.TabIndex = 0;
             flpNotes.WrapContents = false;
+            flpNotes.Paint += flpNotes_Paint;
             // 
             // panel1
             // 
@@ -100,6 +101,43 @@
             panel1.Size = new Size(303, 26);
             panel1.TabIndex = 0;
             // 
+            // label9
+            // 
+            label9.AutoSize = true;
+            label9.Font = new Font("Century Gothic", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label9.Location = new Point(126, 4);
+            label9.Name = "label9";
+            label9.Size = new Size(59, 16);
+            label9.TabIndex = 7;
+            label9.Text = "My notes";
+            // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.Font = new Font("Century Gothic", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label8.Location = new Point(35, 4);
+            label8.Name = "label8";
+            label8.Size = new Size(59, 16);
+            label8.TabIndex = 6;
+            label8.Text = "Go back";
+            // 
+            // pictureBox10
+            // 
+            pictureBox10.Location = new Point(100, 3);
+            pictureBox10.Name = "pictureBox10";
+            pictureBox10.Size = new Size(20, 20);
+            pictureBox10.TabIndex = 5;
+            pictureBox10.TabStop = false;
+            pictureBox10.Click += pictureBox10_Click;
+            // 
+            // pictureBox9
+            // 
+            pictureBox9.Location = new Point(9, 3);
+            pictureBox9.Name = "pictureBox9";
+            pictureBox9.Size = new Size(20, 20);
+            pictureBox9.TabIndex = 4;
+            pictureBox9.TabStop = false;
+            // 
             // panel2
             // 
             panel2.Controls.Add(pictureBox1);
@@ -111,15 +149,13 @@
             panel2.Size = new Size(303, 70);
             panel2.TabIndex = 1;
             // 
-            // label1
+            // pictureBox1
             // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Century Gothic", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(9, 12);
-            label1.Name = "label1";
-            label1.Size = new Size(43, 16);
-            label1.TabIndex = 0;
-            label1.Text = "Name";
+            pictureBox1.Location = new Point(234, 36);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(20, 20);
+            pictureBox1.TabIndex = 2;
+            pictureBox1.TabStop = false;
             // 
             // label2
             // 
@@ -131,14 +167,6 @@
             label2.TabIndex = 1;
             label2.Text = "Sed ut perspiciatis unde omnis?";
             // 
-            // pictureBox1
-            // 
-            pictureBox1.Location = new Point(234, 36);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(20, 20);
-            pictureBox1.TabIndex = 2;
-            pictureBox1.TabStop = false;
-            // 
             // pictureBox2
             // 
             pictureBox2.Location = new Point(269, 36);
@@ -146,6 +174,16 @@
             pictureBox2.Size = new Size(20, 20);
             pictureBox2.TabIndex = 3;
             pictureBox2.TabStop = false;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Century Gothic", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.Location = new Point(9, 12);
+            label1.Name = "label1";
+            label1.Size = new Size(43, 16);
+            label1.TabIndex = 0;
+            label1.Text = "Name";
             // 
             // panel3
             // 
@@ -262,21 +300,15 @@
             panel6.Size = new Size(435, 358);
             panel6.TabIndex = 0;
             // 
-            // pictureBox7
+            // richTextBox1
             // 
-            pictureBox7.Location = new Point(354, 317);
-            pictureBox7.Name = "pictureBox7";
-            pictureBox7.Size = new Size(20, 20);
-            pictureBox7.TabIndex = 3;
-            pictureBox7.TabStop = false;
-            // 
-            // pictureBox8
-            // 
-            pictureBox8.Location = new Point(389, 317);
-            pictureBox8.Name = "pictureBox8";
-            pictureBox8.Size = new Size(20, 20);
-            pictureBox8.TabIndex = 4;
-            pictureBox8.TabStop = false;
+            richTextBox1.BackColor = Color.FromArgb(235, 231, 231);
+            richTextBox1.BorderStyle = BorderStyle.None;
+            richTextBox1.Location = new Point(19, 55);
+            richTextBox1.Name = "richTextBox1";
+            richTextBox1.Size = new Size(390, 256);
+            richTextBox1.TabIndex = 6;
+            richTextBox1.Text = "";
             // 
             // label7
             // 
@@ -288,52 +320,21 @@
             label7.TabIndex = 5;
             label7.Text = "Tittle";
             // 
-            // richTextBox1
+            // pictureBox8
             // 
-            richTextBox1.BackColor = Color.FromArgb(235, 231, 231);
-            richTextBox1.BorderStyle = BorderStyle.None;
-            richTextBox1.Location = new Point(19, 55);
-            richTextBox1.Name = "richTextBox1";
-            richTextBox1.Size = new Size(390, 256);
-            richTextBox1.TabIndex = 6;
-            richTextBox1.Text = "";
+            pictureBox8.Location = new Point(389, 317);
+            pictureBox8.Name = "pictureBox8";
+            pictureBox8.Size = new Size(20, 20);
+            pictureBox8.TabIndex = 4;
+            pictureBox8.TabStop = false;
             // 
-            // pictureBox9
+            // pictureBox7
             // 
-            pictureBox9.Location = new Point(9, 3);
-            pictureBox9.Name = "pictureBox9";
-            pictureBox9.Size = new Size(20, 20);
-            pictureBox9.TabIndex = 4;
-            pictureBox9.TabStop = false;
-            // 
-            // pictureBox10
-            // 
-            pictureBox10.Location = new Point(100, 3);
-            pictureBox10.Name = "pictureBox10";
-            pictureBox10.Size = new Size(20, 20);
-            pictureBox10.TabIndex = 5;
-            pictureBox10.TabStop = false;
-            pictureBox10.Click += pictureBox10_Click;
-            // 
-            // label8
-            // 
-            label8.AutoSize = true;
-            label8.Font = new Font("Century Gothic", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label8.Location = new Point(35, 4);
-            label8.Name = "label8";
-            label8.Size = new Size(59, 16);
-            label8.TabIndex = 6;
-            label8.Text = "Go back";
-            // 
-            // label9
-            // 
-            label9.AutoSize = true;
-            label9.Font = new Font("Century Gothic", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label9.Location = new Point(126, 4);
-            label9.Name = "label9";
-            label9.Size = new Size(59, 16);
-            label9.TabIndex = 7;
-            label9.Text = "My notes";
+            pictureBox7.Location = new Point(354, 317);
+            pictureBox7.Name = "pictureBox7";
+            pictureBox7.Size = new Size(20, 20);
+            pictureBox7.TabIndex = 3;
+            pictureBox7.TabStop = false;
             // 
             // frmNotes
             // 
@@ -348,6 +349,8 @@
             flpNotes.ResumeLayout(false);
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox10).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox9).EndInit();
             panel2.ResumeLayout(false);
             panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
@@ -363,10 +366,8 @@
             panel5.ResumeLayout(false);
             panel6.ResumeLayout(false);
             panel6.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox7).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox8).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox9).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox10).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox7).EndInit();
             ResumeLayout(false);
         }
 

@@ -17,6 +17,12 @@ namespace GymRoom
             InitializeComponent();
         }
 
+        private void AnyArea_Click(object sender, EventArgs e)
+        {
+            var login = new frmLogin();
+            login.Show();
+            this.Hide();
+        }
         private void label1_Click(object sender, EventArgs e)
         {
 
