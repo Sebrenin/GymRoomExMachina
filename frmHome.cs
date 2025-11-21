@@ -50,7 +50,7 @@ namespace GymRoom
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-            
+
         }
 
         private void profile_Click(object sender, EventArgs e)
@@ -80,7 +80,7 @@ namespace GymRoom
             {
                 quicknote.Text = "Quick Note...";
                 quicknote.ForeColor = Color.Gray;
-                
+
             }
 
             string query = "INSERT INTO Notes (Content) VALUES (@content)";
@@ -100,8 +100,12 @@ namespace GymRoom
 
             var notesForm = Application.OpenForms["frmNotes"] as frmNotes;
             notesForm?.ReloadNotes();
-        }       
+        }
 
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("La nota se ha guardado", "Nota registrada", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
     }
+}
 

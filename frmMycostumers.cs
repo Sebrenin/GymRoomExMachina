@@ -21,5 +21,12 @@ namespace GymRoom
         {
 
         }
+
+        private void pictureBox12_Click(object sender, EventArgs e)
+        {
+            frmHome frmHome = new frmHome();
+            frmHome.Show();
+            this.Hide();
+        }
     }
 }

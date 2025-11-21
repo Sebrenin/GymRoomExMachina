@@ -114,7 +114,7 @@
             userControlChats4.Location = new Point(3, 194);
             userControlChats4.Margin = new Padding(3, 2, 3, 2);
             userControlChats4.Name = "userControlChats4";
-            userControlChats4.Size = new Size(388, 60);
+            userControlChats4.Size = new Size(277, 60);
             userControlChats4.TabIndex = 3;
             // 
             // frmChats
