@@ -28,5 +28,12 @@ namespace GymRoom
             frmHome.Show();
             this.Hide();
         }
+
+        private void btnGoBack_Click(object sender, EventArgs e)
+        {
+            frmHome Home = new frmHome();
+            Home.Show();
+            this.Close();
+        }
     }
 }
