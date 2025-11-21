@@ -21,5 +21,12 @@ namespace GymRoom
         {
 
         }
+
+        private void label8_Click(object sender, EventArgs e)
+        {
+            frmMealOP frmMealOP = new frmMealOP();
+            frmMealOP.Show();
+            this.Hide();
+        }
     }
 }

@@ -33,6 +33,7 @@ namespace GymRoom
 
         }
 
+<<<<<<< Updated upstream
         private void textBox2_TextChanged(object sender, EventArgs e)
         {
 
@@ -88,6 +89,13 @@ namespace GymRoom
             frmHome home = new frmHome();
             home.Show();
             this.Close();
+=======
+        private void label8_Click(object sender, EventArgs e)
+        {
+            frmHome frmHome = new frmHome();
+            frmHome.Show();
+            this.Hide();
+>>>>>>> Stashed changes
         }
     }
 }

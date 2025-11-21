@@ -118,6 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+<<<<<<< Updated upstream
   <data name="btnGoBack.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
@@ -1315,10 +1316,20 @@
         qWLq7ysWCPfNCnDcJCLuXuzjR0XEk0slbXxhUSbbs+vuJQo6AKr9KgLlZkU3g7cuOT/7m3+zvXut93gv
         +qbPUtHdZ6t0+aSIeGSxUwVacGCveASyy6qoew4KUJXA/7mOLlFWZhnK942IJxT21MvLoc+VnkpNUUSn
         +fZae1s7HypFdwO9176yBAF8hps60Th99lXKd7VVYGp7VsVs8H+lY1qpkfCnKwAAAABJRU5ErkJggg==
+=======
+  <data name="pictureBox10.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1
+        MAAA6mAAADqYAAAXcJy6UTwAAAAHdElNRQfpCwYACQx3UHlFAAAAo0lEQVQ4T+3UywnCQBSF4bEEFbSZ
+        uHIhdqH1qOkiaqzJQnyA5j8hV4bgQu/MSjzwQbI5mVcm/BNniBlG7VtiJjjigi0GcEdlJzw7Jdzpl+l5
+        ClfisgcquNdPo4hHdsYKCyw/MMfr41rwHaxM7rji9oUN2s3LXqi8m/IarilbtCk1VKhN2WOMpMSlknRs
+        LP3SpINtUekBWX49iy6HAlkuh59NCA2nPEmlUv5PxgAAAABJRU5ErkJggg==
+>>>>>>> Stashed changes
 </value>
   </data>
   <data name="pictureBox9.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
+<<<<<<< Updated upstream
         iVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAYAAAD0eNT6AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
         vAAADrwBlbxySQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAABGbSURBVHhe7d0J
         jHVnWQfwf9mVrVJKsWxSRK0IIpQWBDEsooawFWOhMUAFKrJI2FIoFWOMyiIgFISqCbFAVZaKEhHQsggo
@@ -2052,6 +2063,13 @@
         1D/bKN5tncuSPLfeWQBgdR2a5JNJ7miU8dZK+d2fGBYyAgC2ot2TrB8+er+nUdJrkSuHuxQeVu8MALD1
         lYWEXpnknCTfbxT3rLkxyUeTvMJCPgDQv8cleUGSNyX5UJJLk/xXkuuS3Dx8hF9Svi7fKz8rrymvLe8p
         792v3igwDf8P7nqvfnksYX8AAAAASUVORK5CYII=
+=======
+        iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1
+        MAAA6mAAADqYAAAXcJy6UTwAAAAHdElNRQfpCwYACQx3UHlFAAAAo0lEQVQ4T+3UywnCQBSF4bEEFbSZ
+        uHIhdqH1qOkiaqzJQnyA5j8hV4bgQu/MSjzwQbI5mVcm/BNniBlG7VtiJjjigi0GcEdlJzw7Jdzpl+l5
+        ClfisgcquNdPo4hHdsYKCyw/MMfr41rwHaxM7rji9oUN2s3LXqi8m/IarilbtCk1VKhN2WOMpMSlknRs
+        LP3SpINtUekBWX49iy6HAlkuh59NCA2nPEmlUv5PxgAAAABJRU5ErkJggg==
+>>>>>>> Stashed changes
 </value>
   </data>
 </root>

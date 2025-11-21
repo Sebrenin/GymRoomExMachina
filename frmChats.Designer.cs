@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmChats));
             splitContainer1 = new SplitContainer();
+<<<<<<< Updated upstream
             flowLayoutPanel1 = new FlowLayoutPanel();
             groupBox1 = new GroupBox();
             btnGoBack = new Button();
@@ -60,10 +61,19 @@
             label4 = new Label();
             pictureBox5 = new PictureBox();
             pictureBox6 = new PictureBox();
+=======
+            panel2 = new Panel();
+            label9 = new Label();
+            label8 = new Label();
+            pictureBox10 = new PictureBox();
+            pictureBox9 = new PictureBox();
+            flowLayoutPanel1 = new FlowLayoutPanel();
+>>>>>>> Stashed changes
             ((System.ComponentModel.ISupportInitialize)splitContainer1).BeginInit();
             splitContainer1.Panel1.SuspendLayout();
             splitContainer1.Panel2.SuspendLayout();
             splitContainer1.SuspendLayout();
+<<<<<<< Updated upstream
             flowLayoutPanel1.SuspendLayout();
             groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)chats).BeginInit();
@@ -88,6 +98,11 @@
             panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
+=======
+            panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox10).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox9).BeginInit();
+>>>>>>> Stashed changes
             SuspendLayout();
             // 
             // splitContainer1
@@ -112,10 +127,67 @@
             splitContainer1.SplitterWidth = 5;
             splitContainer1.TabIndex = 0;
             // 
+<<<<<<< Updated upstream
             // flowLayoutPanel1
             // 
             flowLayoutPanel1.AutoScroll = true;
             flowLayoutPanel1.Controls.Add(groupBox1);
+=======
+            // panel2
+            // 
+            panel2.Controls.Add(label9);
+            panel2.Controls.Add(label8);
+            panel2.Controls.Add(pictureBox10);
+            panel2.Controls.Add(pictureBox9);
+            panel2.Dock = DockStyle.Top;
+            panel2.Location = new Point(0, 0);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(280, 34);
+            panel2.TabIndex = 2;
+            // 
+            // label9
+            // 
+            label9.AutoSize = true;
+            label9.Font = new Font("Century Gothic", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label9.Location = new Point(136, 9);
+            label9.Name = "label9";
+            label9.Size = new Size(39, 16);
+            label9.TabIndex = 26;
+            label9.Text = "Chats";
+            // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.Font = new Font("Century Gothic", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label8.Location = new Point(45, 9);
+            label8.Name = "label8";
+            label8.Size = new Size(59, 16);
+            label8.TabIndex = 25;
+            label8.Text = "Go back";
+            label8.Click += label8_Click;
+            // 
+            // pictureBox10
+            // 
+            pictureBox10.Image = (Image)resources.GetObject("pictureBox10.Image");
+            pictureBox10.Location = new Point(110, 9);
+            pictureBox10.Name = "pictureBox10";
+            pictureBox10.Size = new Size(20, 20);
+            pictureBox10.TabIndex = 24;
+            pictureBox10.TabStop = false;
+            // 
+            // pictureBox9
+            // 
+            pictureBox9.Image = (Image)resources.GetObject("pictureBox9.Image");
+            pictureBox9.Location = new Point(19, 9);
+            pictureBox9.Name = "pictureBox9";
+            pictureBox9.Size = new Size(20, 20);
+            pictureBox9.TabIndex = 23;
+            pictureBox9.TabStop = false;
+            // 
+            // flowLayoutPanel1
+            // 
+            flowLayoutPanel1.AutoScroll = true;
+>>>>>>> Stashed changes
             flowLayoutPanel1.Dock = DockStyle.Fill;
             flowLayoutPanel1.FlowDirection = FlowDirection.TopDown;
             flowLayoutPanel1.Location = new Point(0, 0);
@@ -125,6 +197,7 @@
             flowLayoutPanel1.TabIndex = 0;
             flowLayoutPanel1.WrapContents = false;
             // 
+<<<<<<< Updated upstream
             // groupBox1
             // 
             groupBox1.BackColor = Color.Maroon;
@@ -441,6 +514,8 @@
             pictureBox6.TabIndex = 5;
             pictureBox6.TabStop = false;
             // 
+=======
+>>>>>>> Stashed changes
             // frmChats
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -454,6 +529,7 @@
             splitContainer1.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)splitContainer1).EndInit();
             splitContainer1.ResumeLayout(false);
+<<<<<<< Updated upstream
             flowLayoutPanel1.ResumeLayout(false);
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();
@@ -481,6 +557,12 @@
             panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
+=======
+            panel2.ResumeLayout(false);
+            panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox10).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox9).EndInit();
+>>>>>>> Stashed changes
             ResumeLayout(false);
         }
 
@@ -488,6 +570,7 @@
 
         private SplitContainer splitContainer1;
         private FlowLayoutPanel flowLayoutPanel1;
+<<<<<<< Updated upstream
         private UserControlChats userControlChats1;
         private UserControlChats userControlChats2;
         private UserControlChats userControlChats3;
@@ -524,5 +607,12 @@
         private Label label4;
         private TextBox textBox2;
         private Button btnGoBack;
+=======
+        private Panel panel2;
+        private Label label9;
+        private Label label8;
+        private PictureBox pictureBox10;
+        private PictureBox pictureBox9;
+>>>>>>> Stashed changes
     }
 }

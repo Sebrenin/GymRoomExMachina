@@ -16,5 +16,32 @@ namespace GymRoom
         {
             InitializeComponent();
         }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox9_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label8_Click(object sender, EventArgs e)
+        {
+            frmMycostumers frmMycostumers = new frmMycostumers();
+            frmMycostumers.Show();
+            this.Hide();
+        }
     }
 }

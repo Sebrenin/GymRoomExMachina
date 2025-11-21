@@ -21,5 +21,12 @@ namespace GymRoom
         {
 
         }
+
+        private void label8_Click(object sender, EventArgs e)
+        {
+            frmMycostumers frmMycostumers = new frmMycostumers();
+            frmMycostumers.Show();
+            this.Hide();
+        }
     }
 }

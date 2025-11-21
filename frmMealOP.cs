@@ -24,7 +24,9 @@ namespace GymRoom
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            frmMealtable frmMealtable = new frmMealtable();
+            frmMealtable.Show();
+            this.Hide();
         }
     }
 }

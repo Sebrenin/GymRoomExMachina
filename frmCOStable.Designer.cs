@@ -28,26 +28,27 @@
         /// </summary>
         private void InitializeComponent()
         {
-            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle4 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle6 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle5 = new DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCOStable));
             panel1 = new Panel();
             panel2 = new Panel();
-            panel3 = new Panel();
-            panel4 = new Panel();
-            panel5 = new Panel();
-            panel6 = new Panel();
-            pictureBox1 = new PictureBox();
-            label1 = new Label();
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
             textBox3 = new TextBox();
-            label2 = new Label();
+            textBox2 = new TextBox();
+            textBox1 = new TextBox();
+            label1 = new Label();
+            pictureBox1 = new PictureBox();
+            panel4 = new Panel();
+            panel3 = new Panel();
             comboBox1 = new ComboBox();
-            richTextBox1 = new RichTextBox();
-            label3 = new Label();
-            pictureBox2 = new PictureBox();
+            label2 = new Label();
+            panel5 = new Panel();
             textBox4 = new TextBox();
+            panel6 = new Panel();
+            pictureBox2 = new PictureBox();
+            label3 = new Label();
+            richTextBox1 = new RichTextBox();
             panel7 = new Panel();
             textBox5 = new TextBox();
             panel8 = new Panel();
@@ -62,11 +63,16 @@
             dgvMensures = new DataGridView();
             colBodypart = new DataGridViewTextBoxColumn();
             colMensure = new DataGridViewTextBoxColumn();
+            label9 = new Label();
+            label8 = new Label();
+            pictureBox9 = new PictureBox();
+            pictureBox10 = new PictureBox();
+            panel1.SuspendLayout();
             panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel3.SuspendLayout();
             panel5.SuspendLayout();
             panel6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             panel7.SuspendLayout();
             panel8.SuspendLayout();
@@ -74,10 +80,16 @@
             panel10.SuspendLayout();
             panel11.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dgvMensures).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox9).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox10).BeginInit();
             SuspendLayout();
             // 
             // panel1
             // 
+            panel1.Controls.Add(label9);
+            panel1.Controls.Add(label8);
+            panel1.Controls.Add(pictureBox9);
+            panel1.Controls.Add(pictureBox10);
             panel1.Location = new Point(0, 1);
             panel1.Name = "panel1";
             panel1.Size = new Size(800, 40);
@@ -97,74 +109,17 @@
             panel2.Size = new Size(776, 105);
             panel2.TabIndex = 1;
             // 
-            // panel3
+            // textBox3
             // 
-            panel3.BackColor = Color.FromArgb(192, 190, 190);
-            panel3.Controls.Add(comboBox1);
-            panel3.Controls.Add(label2);
-            panel3.Location = new Point(12, 158);
-            panel3.Name = "panel3";
-            panel3.Size = new Size(380, 63);
-            panel3.TabIndex = 2;
-            // 
-            // panel4
-            // 
-            panel4.Location = new Point(421, 111);
-            panel4.Name = "panel4";
-            panel4.Size = new Size(415, 100);
-            panel4.TabIndex = 3;
-            // 
-            // panel5
-            // 
-            panel5.BackColor = Color.FromArgb(192, 190, 190);
-            panel5.Controls.Add(textBox4);
-            panel5.Location = new Point(398, 158);
-            panel5.Name = "panel5";
-            panel5.Size = new Size(201, 63);
-            panel5.TabIndex = 3;
-            // 
-            // panel6
-            // 
-            panel6.BackColor = Color.FromArgb(192, 190, 190);
-            panel6.Controls.Add(pictureBox2);
-            panel6.Controls.Add(label3);
-            panel6.Controls.Add(richTextBox1);
-            panel6.Location = new Point(12, 227);
-            panel6.Name = "panel6";
-            panel6.Size = new Size(380, 124);
-            panel6.TabIndex = 4;
-            // 
-            // pictureBox1
-            // 
-            pictureBox1.Location = new Point(14, 10);
-            pictureBox1.Margin = new Padding(5);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(90, 90);
-            pictureBox1.TabIndex = 4;
-            pictureBox1.TabStop = false;
-            pictureBox1.Click += pictureBox1_Click;
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Century Gothic", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(155, 47);
-            label1.Name = "label1";
-            label1.Size = new Size(58, 19);
-            label1.TabIndex = 5;
-            label1.Text = "Name";
-            // 
-            // textBox1
-            // 
-            textBox1.BackColor = Color.FromArgb(192, 190, 190);
-            textBox1.BorderStyle = BorderStyle.None;
-            textBox1.Font = new Font("Century Gothic", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            textBox1.Location = new Point(305, 48);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(100, 20);
-            textBox1.TabIndex = 6;
-            textBox1.Text = "Age";
-            textBox1.TextAlign = HorizontalAlignment.Center;
+            textBox3.BackColor = Color.FromArgb(192, 190, 190);
+            textBox3.BorderStyle = BorderStyle.None;
+            textBox3.Font = new Font("Century Gothic", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            textBox3.Location = new Point(647, 48);
+            textBox3.Name = "textBox3";
+            textBox3.Size = new Size(100, 20);
+            textBox3.TabIndex = 8;
+            textBox3.Text = "Training";
+            textBox3.TextAlign = HorizontalAlignment.Center;
             // 
             // textBox2
             // 
@@ -178,27 +133,54 @@
             textBox2.Text = "Body type";
             textBox2.TextAlign = HorizontalAlignment.Center;
             // 
-            // textBox3
+            // textBox1
             // 
-            textBox3.BackColor = Color.FromArgb(192, 190, 190);
-            textBox3.BorderStyle = BorderStyle.None;
-            textBox3.Font = new Font("Century Gothic", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            textBox3.Location = new Point(647, 48);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(100, 20);
-            textBox3.TabIndex = 8;
-            textBox3.Text = "Training";
-            textBox3.TextAlign = HorizontalAlignment.Center;
+            textBox1.BackColor = Color.FromArgb(192, 190, 190);
+            textBox1.BorderStyle = BorderStyle.None;
+            textBox1.Font = new Font("Century Gothic", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            textBox1.Location = new Point(305, 48);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(100, 20);
+            textBox1.TabIndex = 6;
+            textBox1.Text = "Age";
+            textBox1.TextAlign = HorizontalAlignment.Center;
             // 
-            // label2
+            // label1
             // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Century Gothic", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label2.Location = new Point(14, 23);
-            label2.Name = "label2";
-            label2.Size = new Size(47, 19);
-            label2.TabIndex = 9;
-            label2.Text = "Goal";
+            label1.AutoSize = true;
+            label1.Font = new Font("Century Gothic", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.Location = new Point(155, 47);
+            label1.Name = "label1";
+            label1.Size = new Size(58, 19);
+            label1.TabIndex = 5;
+            label1.Text = "Name";
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.Location = new Point(14, 10);
+            pictureBox1.Margin = new Padding(5);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(90, 90);
+            pictureBox1.TabIndex = 4;
+            pictureBox1.TabStop = false;
+            pictureBox1.Click += pictureBox1_Click;
+            // 
+            // panel4
+            // 
+            panel4.Location = new Point(421, 111);
+            panel4.Name = "panel4";
+            panel4.Size = new Size(415, 100);
+            panel4.TabIndex = 3;
+            // 
+            // panel3
+            // 
+            panel3.BackColor = Color.FromArgb(192, 190, 190);
+            panel3.Controls.Add(comboBox1);
+            panel3.Controls.Add(label2);
+            panel3.Location = new Point(12, 158);
+            panel3.Name = "panel3";
+            panel3.Size = new Size(380, 63);
+            panel3.TabIndex = 2;
             // 
             // comboBox1
             // 
@@ -211,35 +193,24 @@
             comboBox1.Size = new Size(141, 27);
             comboBox1.TabIndex = 10;
             // 
-            // richTextBox1
+            // label2
             // 
-            richTextBox1.BorderStyle = BorderStyle.None;
-            richTextBox1.Location = new Point(14, 14);
-            richTextBox1.Name = "richTextBox1";
-            richTextBox1.Size = new Size(352, 96);
-            richTextBox1.TabIndex = 0;
-            richTextBox1.Text = "";
+            label2.AutoSize = true;
+            label2.Font = new Font("Century Gothic", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label2.Location = new Point(14, 23);
+            label2.Name = "label2";
+            label2.Size = new Size(47, 19);
+            label2.TabIndex = 9;
+            label2.Text = "Goal";
             // 
-            // label3
+            // panel5
             // 
-            label3.AutoSize = true;
-            label3.BackColor = Color.White;
-            label3.Font = new Font("Century Gothic", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label3.Location = new Point(23, 26);
-            label3.Name = "label3";
-            label3.Size = new Size(83, 16);
-            label3.TabIndex = 1;
-            label3.Text = "Observations";
-            // 
-            // pictureBox2
-            // 
-            pictureBox2.BackColor = Color.White;
-            pictureBox2.Location = new Point(324, 26);
-            pictureBox2.Margin = new Padding(5);
-            pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(30, 30);
-            pictureBox2.TabIndex = 9;
-            pictureBox2.TabStop = false;
+            panel5.BackColor = Color.FromArgb(192, 190, 190);
+            panel5.Controls.Add(textBox4);
+            panel5.Location = new Point(398, 158);
+            panel5.Name = "panel5";
+            panel5.Size = new Size(201, 63);
+            panel5.TabIndex = 3;
             // 
             // textBox4
             // 
@@ -252,6 +223,47 @@
             textBox4.TabIndex = 9;
             textBox4.Text = "Weight";
             textBox4.TextAlign = HorizontalAlignment.Center;
+            // 
+            // panel6
+            // 
+            panel6.BackColor = Color.FromArgb(192, 190, 190);
+            panel6.Controls.Add(pictureBox2);
+            panel6.Controls.Add(label3);
+            panel6.Controls.Add(richTextBox1);
+            panel6.Location = new Point(12, 227);
+            panel6.Name = "panel6";
+            panel6.Size = new Size(380, 124);
+            panel6.TabIndex = 4;
+            // 
+            // pictureBox2
+            // 
+            pictureBox2.BackColor = Color.White;
+            pictureBox2.Location = new Point(324, 26);
+            pictureBox2.Margin = new Padding(5);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(30, 30);
+            pictureBox2.TabIndex = 9;
+            pictureBox2.TabStop = false;
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.BackColor = Color.White;
+            label3.Font = new Font("Century Gothic", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label3.Location = new Point(23, 26);
+            label3.Name = "label3";
+            label3.Size = new Size(83, 16);
+            label3.TabIndex = 1;
+            label3.Text = "Observations";
+            // 
+            // richTextBox1
+            // 
+            richTextBox1.BorderStyle = BorderStyle.None;
+            richTextBox1.Location = new Point(14, 14);
+            richTextBox1.Name = "richTextBox1";
+            richTextBox1.Size = new Size(352, 96);
+            richTextBox1.TabIndex = 0;
+            richTextBox1.Text = "";
             // 
             // panel7
             // 
@@ -379,14 +391,14 @@
             dgvMensures.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dgvMensures.BackgroundColor = Color.White;
             dgvMensures.BorderStyle = BorderStyle.None;
-            dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = SystemColors.Control;
-            dataGridViewCellStyle1.Font = new Font("Century Gothic", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            dataGridViewCellStyle1.ForeColor = SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = Color.Maroon;
-            dataGridViewCellStyle1.SelectionForeColor = SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = DataGridViewTriState.True;
-            dgvMensures.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle4.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = SystemColors.Control;
+            dataGridViewCellStyle4.Font = new Font("Century Gothic", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            dataGridViewCellStyle4.ForeColor = SystemColors.WindowText;
+            dataGridViewCellStyle4.SelectionBackColor = Color.Maroon;
+            dataGridViewCellStyle4.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = DataGridViewTriState.True;
+            dgvMensures.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
             dgvMensures.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvMensures.Columns.AddRange(new DataGridViewColumn[] { colBodypart, colMensure });
             dgvMensures.Dock = DockStyle.Bottom;
@@ -394,9 +406,9 @@
             dgvMensures.Location = new Point(0, 385);
             dgvMensures.Name = "dgvMensures";
             dgvMensures.RowHeadersVisible = false;
-            dataGridViewCellStyle3.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            dataGridViewCellStyle3.Padding = new Padding(3);
-            dgvMensures.RowsDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle6.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            dataGridViewCellStyle6.Padding = new Padding(3);
+            dgvMensures.RowsDefaultCellStyle = dataGridViewCellStyle6;
             dgvMensures.ScrollBars = ScrollBars.Vertical;
             dgvMensures.SelectionMode = DataGridViewSelectionMode.CellSelect;
             dgvMensures.Size = new Size(800, 65);
@@ -406,8 +418,8 @@
             // colBodypart
             // 
             colBodypart.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
-            dataGridViewCellStyle2.Font = new Font("Century Gothic", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            colBodypart.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle5.Font = new Font("Century Gothic", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            colBodypart.DefaultCellStyle = dataGridViewCellStyle5;
             colBodypart.HeaderText = "Body part";
             colBodypart.Name = "colBodypart";
             colBodypart.ReadOnly = true;
@@ -418,6 +430,45 @@
             colMensure.HeaderText = "Mensure (cm)";
             colMensure.Name = "colMensure";
             colMensure.ReadOnly = true;
+            // 
+            // label9
+            // 
+            label9.AutoSize = true;
+            label9.Font = new Font("Century Gothic", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label9.Location = new Point(129, 11);
+            label9.Name = "label9";
+            label9.Size = new Size(102, 16);
+            label9.TabIndex = 22;
+            label9.Text = "Costumer profile";
+            // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.Font = new Font("Century Gothic", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label8.Location = new Point(38, 11);
+            label8.Name = "label8";
+            label8.Size = new Size(59, 16);
+            label8.TabIndex = 21;
+            label8.Text = "Go back";
+            label8.Click += label8_Click;
+            // 
+            // pictureBox9
+            // 
+            pictureBox9.Image = (Image)resources.GetObject("pictureBox9.Image");
+            pictureBox9.Location = new Point(12, 11);
+            pictureBox9.Name = "pictureBox9";
+            pictureBox9.Size = new Size(20, 20);
+            pictureBox9.TabIndex = 19;
+            pictureBox9.TabStop = false;
+            // 
+            // pictureBox10
+            // 
+            pictureBox10.Image = (Image)resources.GetObject("pictureBox10.Image");
+            pictureBox10.Location = new Point(103, 11);
+            pictureBox10.Name = "pictureBox10";
+            pictureBox10.Size = new Size(20, 20);
+            pictureBox10.TabIndex = 20;
+            pictureBox10.TabStop = false;
             // 
             // frmCOStable
             // 
@@ -437,15 +488,17 @@
             Controls.Add(panel1);
             Controls.Add(panel6);
             Name = "frmCOStable";
+            panel1.ResumeLayout(false);
+            panel1.PerformLayout();
             panel2.ResumeLayout(false);
             panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             panel3.ResumeLayout(false);
             panel3.PerformLayout();
             panel5.ResumeLayout(false);
             panel5.PerformLayout();
             panel6.ResumeLayout(false);
             panel6.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             panel7.ResumeLayout(false);
             panel7.PerformLayout();
@@ -458,6 +511,8 @@
             panel11.ResumeLayout(false);
             panel11.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)dgvMensures).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox9).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox10).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -495,5 +550,9 @@
         private DataGridView dgvMensures;
         private DataGridViewTextBoxColumn colBodypart;
         private DataGridViewTextBoxColumn colMensure;
+        private Label label9;
+        private Label label8;
+        private PictureBox pictureBox9;
+        private PictureBox pictureBox10;
     }
 }

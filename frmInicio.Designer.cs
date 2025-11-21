@@ -29,33 +29,35 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmInicio));
-            label1 = new Label();
             pictureBox1 = new PictureBox();
+            label2 = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Century Gothic", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.ForeColor = SystemColors.ButtonHighlight;
-            label1.Location = new Point(295, 134);
-            label1.Name = "label1";
-            label1.Size = new Size(109, 19);
-            label1.TabIndex = 0;
-            label1.Text = "WELCOME TO";
-            label1.TextAlign = ContentAlignment.MiddleCenter;
-            label1.Click += label1_Click;
-            // 
             // pictureBox1
             // 
+            pictureBox1.Anchor = AnchorStyles.None;
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
             pictureBox1.Location = new Point(196, 164);
             pictureBox1.Margin = new Padding(3, 2, 3, 2);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(301, 52);
+            pictureBox1.Size = new Size(303, 54);
+            pictureBox1.SizeMode = PictureBoxSizeMode.CenterImage;
             pictureBox1.TabIndex = 1;
             pictureBox1.TabStop = false;
+            pictureBox1.Click += pictureBox1_Click;
+            // 
+            // label2
+            // 
+            label2.Anchor = AnchorStyles.None;
+            label2.AutoSize = true;
+            label2.Font = new Font("Century Gothic", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label2.ForeColor = Color.White;
+            label2.Location = new Point(273, 125);
+            label2.Name = "label2";
+            label2.Size = new Size(167, 28);
+            label2.TabIndex = 3;
+            label2.Text = "WELCOME TO";
             // 
             // frmInicio
             // 
@@ -63,11 +65,12 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(89, 11, 11);
             ClientSize = new Size(700, 338);
+            Controls.Add(label2);
             Controls.Add(pictureBox1);
-            Controls.Add(label1);
             Margin = new Padding(3, 2, 3, 2);
             Name = "frmInicio";
             Text = "frmPrueba";
+            WindowState = FormWindowState.Maximized;
             Load += frmPrueba_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
@@ -75,8 +78,7 @@
         }
 
         #endregion
-
-        private Label label1;
         private PictureBox pictureBox1;
+        private Label label2;
     }
 }

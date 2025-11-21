@@ -22,18 +22,35 @@ namespace GymRoom
 
         }
 
+<<<<<<< Updated upstream
         private void pictureBox12_Click(object sender, EventArgs e)
+=======
+        private void label8_Click(object sender, EventArgs e)
+>>>>>>> Stashed changes
         {
             frmHome frmHome = new frmHome();
             frmHome.Show();
             this.Hide();
         }
 
+<<<<<<< Updated upstream
         private void btnGoBack_Click(object sender, EventArgs e)
         {
             frmHome Home = new frmHome();
             Home.Show();
             this.Close();
+=======
+        private void panel2_Click(object sender, EventArgs e)
+        {
+            frmMember frmMember = new frmMember();
+            frmMember.Show();
+            this.Hide();
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+>>>>>>> Stashed changes
         }
     }
 }
