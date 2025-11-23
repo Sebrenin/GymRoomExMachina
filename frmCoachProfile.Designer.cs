@@ -68,9 +68,11 @@
             // 
             // pictureBox1
             // 
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
             pictureBox1.Location = new Point(27, 58);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(100, 100);
+            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
             // 
@@ -111,9 +113,9 @@
             label9.Font = new Font("Century Gothic", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label9.Location = new Point(132, 9);
             label9.Name = "label9";
-            label9.Size = new Size(59, 16);
+            label9.Size = new Size(65, 16);
             label9.TabIndex = 18;
-            label9.Text = "My notes";
+            label9.Text = "My profile";
             // 
             // label8
             // 

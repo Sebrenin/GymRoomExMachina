@@ -68,86 +68,13 @@ namespace GymRoom
             frmMycostumers.Show();
             this.Hide();
         }
-        //notes
-        private void gotonotes_Click(object sender, EventArgs e)
+
+        private void pictureBox4_Click(object sender, EventArgs e)
         {
             frmNotes frmNotes = new frmNotes();
             frmNotes.Show();
             this.Hide();
         }
-
-        private void btnQuickNoteSave_Click(object sender, EventArgs e)
-        {
-            if (string.IsNullOrWhiteSpace(quicknote.Text))
-            {
-                quicknote.Text = "Quick Note...";
-                quicknote.ForeColor = Color.Gray;
-                return;
-            }
-
-            string nota = quicknote.Text.Trim();
-            string rutaArchivo = "quick_notes.txt";
-
-            if (nota == "Quick Note...")
-            {
-                quicknote.Text = "Quick Note...";
-                quicknote.ForeColor = Color.Gray;
-                MessageBox.Show("No hay contenido válido para guardar.", "Advertencia");
-                return;
-            }
-
-            try
-            {
-                using (System.IO.StreamWriter file = new System.IO.StreamWriter(rutaArchivo, true))
-                {
-                    file.WriteLine($"[{DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss")}] {nota}");
-                }
-
-                MessageBox.Show("Nota guardada correctamente.", "Éxito");
-                quicknote.Clear();
-
-                var notesForm = Application.OpenForms["frmNotes"] as frmNotes;
-                notesForm?.ReloadNotes();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show($"Error al guardar la nota: {ex.Message}", "Error de Archivo");
-            }
-        }
-
-        private void pictureBox2_Click(object sender, EventArgs e)
-        {
-            string nota = quicknote.Text.Trim();
-            string rutaArchivo = "quick_notes.txt";
-
-            if (string.IsNullOrWhiteSpace(nota) || nota == "Quick Note...")
-            {
-                quicknote.Text = "Quick Note...";
-                quicknote.ForeColor = Color.Gray;
-                MessageBox.Show("No hay contenido válido para guardar.", "Advertencia");
-                return;
-            }
-
-            try
-            {
-                using (System.IO.StreamWriter file = new System.IO.StreamWriter(rutaArchivo, true))
-                {
-                    file.WriteLine($"[{DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss")}] {nota}");
-                }
-
-                MessageBox.Show("Nota guardada correctamente en el archivo.", "Éxito");
-                quicknote.Clear();
-
-                var notesForm = Application.OpenForms["frmNotes"] as frmNotes;
-                notesForm?.ReloadNotes();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show($"Error al guardar la nota: {ex.Message}", "Error de Archivo");
-            }
-        }
-
-        
     }
 }
 

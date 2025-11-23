@@ -37,10 +37,7 @@
             incorrectUser = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
-
-            // ✔ CORREGIDO
-            this.SuspendLayout();
-
+            SuspendLayout();
             // 
             // pictureBox4
             // 
@@ -54,7 +51,6 @@
             pictureBox4.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox4.TabIndex = 13;
             pictureBox4.TabStop = false;
-
             // 
             // userboton
             // 
@@ -68,7 +64,6 @@
             userboton.Size = new Size(276, 20);
             userboton.TabIndex = 12;
             userboton.Text = "  User";
-
             // 
             // pictureBox5
             // 
@@ -82,7 +77,6 @@
             pictureBox5.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox5.TabIndex = 15;
             pictureBox5.TabStop = false;
-
             // 
             // pwdboton
             // 
@@ -96,7 +90,6 @@
             pwdboton.Size = new Size(276, 20);
             pwdboton.TabIndex = 14;
             pwdboton.Text = "  Password";
-
             // 
             // button1
             // 
@@ -111,7 +104,6 @@
             button1.TabIndex = 16;
             button1.Text = "Log In";
             button1.UseVisualStyleBackColor = false;
-
             // 
             // incorrectUser
             // 
@@ -121,27 +113,24 @@
             incorrectUser.Size = new Size(32, 15);
             incorrectUser.TabIndex = 17;
             incorrectUser.Text = "Error";
-
+            incorrectUser.Visible = false;
             // 
             // LogInControl
             // 
-            this.AutoScaleDimensions = new SizeF(7F, 15F);
-            this.AutoScaleMode = AutoScaleMode.Font;
-            this.Controls.Add(incorrectUser);
-            this.Controls.Add(button1);
-            this.Controls.Add(pictureBox5);
-            this.Controls.Add(pwdboton);
-            this.Controls.Add(pictureBox4);
-            this.Controls.Add(userboton);
-            this.Name = "LogInControl";
-            this.Size = new Size(304, 174);
-
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            Controls.Add(incorrectUser);
+            Controls.Add(button1);
+            Controls.Add(pictureBox5);
+            Controls.Add(pwdboton);
+            Controls.Add(pictureBox4);
+            Controls.Add(userboton);
+            Name = "LogInControl";
+            Size = new Size(304, 174);
             ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
-
-            
-            this.ResumeLayout(false);
-            this.PerformLayout();
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion

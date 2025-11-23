@@ -92,13 +92,16 @@ namespace GymRoom
 
             _currentNote.Title = wrtNote1.NoteTitle;
             _currentNote.Content = wrtNote1.NoteContent;
-            _currentNote.LastModified = DateTime.Now;
+            
 
             if (!allNotes.Contains(_currentNote))
                 allNotes.Add(_currentNote);
 
             SaveNotesToFile();
             DisplayNotes();
+
+            _currentNote = new NoteClass();
+            LoadNoteInEditor(_currentNote);
 
         }
 
@@ -169,7 +172,7 @@ namespace GymRoom
             // Actualizar contenido desde el editor
             _currentNote.Title = wrtNote1.NoteTitle;
             _currentNote.Content = wrtNote1.NoteContent;
-            _currentNote.LastModified = DateTime.Now;
+            
 
             // Si la nota NO está en la lista, agregarla
             if (!allNotes.Contains(_currentNote))

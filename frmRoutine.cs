@@ -16,5 +16,20 @@ namespace GymRoom
         {
             InitializeComponent();
         }
+
+        private void label9_Click(object sender, EventArgs e)
+        {
+            frmMember frmMember = new frmMember();
+            frmMember.Show();
+            this.Hide();
+        }
+
+        private void label8_Click(object sender, EventArgs e)
+        {
+            frmHome frmHome = new frmHome();
+            frmHome.Show();
+            this.Hide();
+
+        }
     }
 }

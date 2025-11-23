@@ -39,7 +39,7 @@ namespace GymRoom
             }
 
             string connectionString =
-                "Server=DESKTOP-2L7OPJ1\\SQLEXPRESS01;Database=GymRoom Database;Trusted_Connection=True;";
+                "Server=DESKTOP-2L7OPJ1\\SQLEXPRESS01;Database=GymRoom Database;Trusted_Connection=True;TrustServerCertificate=True;";
 
             try
             {
@@ -62,6 +62,15 @@ namespace GymRoom
                         {
                             incorrectUser.Visible = false;
                             LoginExitoso?.Invoke(this, EventArgs.Empty);
+
+                            //IR A HOME
+                            Form parentForm = this.FindForm();
+                            parentForm?.Hide();
+
+                            
+                            frmHome homeForm = new frmHome();
+                            homeForm.Show();
+
                         }
                         else
                         {
@@ -81,10 +90,7 @@ namespace GymRoom
             }
         }
 
-        private void InitializeComponent()
-        {
-
-        }
+        
     }
 }
 
