@@ -1,5 +1,9 @@
+<<<<<<< HEAD
 
 ﻿namespace GymRoom
+=======
+namespace GymRoom
+>>>>>>> e385144d04efb52f91215f9b76d96ac27893a292
 {
     partial class frmLogin
     {
@@ -193,5 +197,9 @@
         private PictureBox pictureBox5;
         private Button button1;
     }
+<<<<<<< HEAD
 
 }
+=======
+}
+>>>>>>> e385144d04efb52f91215f9b76d96ac27893a292

@@ -24,8 +24,8 @@ namespace GymRoom
 
         private void label8_Click(object sender, EventArgs e)
         {
-            frmMealOP frmMealOP = new frmMealOP();
-            frmMealOP.Show();
+            frmMember frmMember = new frmMember();
+            frmMember.Show();
             this.Hide();
         }
     }

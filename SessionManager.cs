@@ -10,12 +10,16 @@ namespace GymRoomExMachina
     {
         public static class SessionManager
         {
-            // Ambos IDs definidos como STRING para evitar conversiones
-            public static string CurrentCoachId { get; private set; }
+            public static string CurrentUserId { get; private set; }
 
-            public static void StartSession(string coachId)
+            public static void StartSession(string userId)
             {
-                CurrentCoachId = coachId;
+                CurrentUserId = userId;
+            }
+
+            public static void EndSession()
+            {
+                CurrentUserId = null;
             }
         }
 

@@ -32,8 +32,6 @@
             label1 = new Label();
             panel1 = new Panel();
             panel4 = new Panel();
-            pictureBox3 = new PictureBox();
-            pictureBox2 = new PictureBox();
             panel8 = new Panel();
             label9 = new Label();
             label8 = new Label();
@@ -48,8 +46,6 @@
             panel3 = new Panel();
             panel1.SuspendLayout();
             panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             panel8.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox10).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox9).BeginInit();
@@ -77,34 +73,12 @@
             // 
             // panel4
             // 
-            panel4.Controls.Add(pictureBox3);
-            panel4.Controls.Add(pictureBox2);
             panel4.Controls.Add(panel8);
             panel4.Dock = DockStyle.Top;
             panel4.Location = new Point(0, 0);
             panel4.Name = "panel4";
             panel4.Size = new Size(800, 40);
             panel4.TabIndex = 2;
-            // 
-            // pictureBox3
-            // 
-            pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
-            pictureBox3.Location = new Point(740, 3);
-            pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(39, 37);
-            pictureBox3.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox3.TabIndex = 9;
-            pictureBox3.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(670, 3);
-            pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(45, 37);
-            pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox2.TabIndex = 11;
-            pictureBox2.TabStop = false;
             // 
             // panel8
             // 
@@ -256,8 +230,6 @@
             Text = "frmMealtable";
             panel1.ResumeLayout(false);
             panel4.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             panel8.ResumeLayout(false);
             panel8.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox10).EndInit();
@@ -279,8 +251,6 @@
         private Panel panel2;
         private Panel panel3;
         private Panel panel4;
-        private PictureBox pictureBox3;
-        private PictureBox pictureBox2;
         private Panel panel8;
         private Label label9;
         private Label label8;

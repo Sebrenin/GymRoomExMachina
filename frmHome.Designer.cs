@@ -25,11 +25,20 @@
             profile = new PictureBox();
             chats = new PictureBox();
             members = new PictureBox();
+<<<<<<< HEAD
             gotonotes = new PictureBox();
             label3 = new Label();
             pictureBox2 = new PictureBox();
             panel2 = new Panel();
             wrtNote1 = new GymRoomExMachina.wrtNote();
+=======
+            label7 = new Label();
+            label8 = new Label();
+            label6 = new Label();
+            label5 = new Label();
+            pictureBox10 = new PictureBox();
+            pictureBox9 = new PictureBox();
+>>>>>>> e385144d04efb52f91215f9b76d96ac27893a292
             panel1.SuspendLayout();
             panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
@@ -85,6 +94,74 @@
             pictureBox1.TabStop = false;
             pictureBox1.Click += pictureBox1_Click;
             // 
+<<<<<<< HEAD
+=======
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Font = new Font("Century Gothic", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label2.Location = new Point(19, 14);
+            label2.Name = "label2";
+            label2.Size = new Size(135, 16);
+            label2.TabIndex = 0;
+            label2.Text = "Your recent messages";
+            // 
+            // panel2
+            // 
+            panel2.BackColor = Color.FromArgb(217, 217, 217);
+            panel2.Controls.Add(quicknote);
+            panel2.Controls.Add(gotonotes);
+            panel2.Controls.Add(pictureBox2);
+            panel2.Controls.Add(label3);
+            panel2.Location = new Point(61, 203);
+            panel2.Margin = new Padding(3, 2, 3, 2);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(612, 115);
+            panel2.TabIndex = 2;
+            // 
+            // quicknote
+            // 
+            quicknote.BorderStyle = BorderStyle.None;
+            quicknote.Location = new Point(15, 37);
+            quicknote.Name = "quicknote";
+            quicknote.Size = new Size(585, 68);
+            quicknote.TabIndex = 0;
+            quicknote.Text = "";
+            // 
+            // gotonotes
+            // 
+            gotonotes.Image = (Image)resources.GetObject("gotonotes.Image");
+            gotonotes.Location = new Point(15, 8);
+            gotonotes.Name = "gotonotes";
+            gotonotes.Size = new Size(25, 22);
+            gotonotes.SizeMode = PictureBoxSizeMode.Zoom;
+            gotonotes.TabIndex = 5;
+            gotonotes.TabStop = false;
+            gotonotes.Click += gotonotes_Click;
+            // 
+            // pictureBox2
+            // 
+            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
+            pictureBox2.Location = new Point(577, 8);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(20, 20);
+            pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox2.TabIndex = 5;
+            pictureBox2.TabStop = false;
+            pictureBox2.Click += pictureBox2_Click;
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Font = new Font("Century Gothic", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label3.Location = new Point(59, 14);
+            label3.Name = "label3";
+            label3.Size = new Size(59, 16);
+            label3.TabIndex = 3;
+            label3.Text = "My notes";
+            label3.Click += label3_Click;
+            // 
+>>>>>>> e385144d04efb52f91215f9b76d96ac27893a292
             // profile
             // 
             profile.Image = (Image)resources.GetObject("profile.Image");
@@ -118,7 +195,11 @@
             members.TabStop = false;
             members.Click += pictureBox6_Click;
             // 
+<<<<<<< HEAD
             // gotonotes
+=======
+            // label7
+>>>>>>> e385144d04efb52f91215f9b76d96ac27893a292
             // 
             gotonotes.Image = (Image)resources.GetObject("gotonotes.Image");
             gotonotes.Location = new Point(15, 8);
@@ -173,6 +254,20 @@
             wrtNote1.Size = new Size(582, 68);
             wrtNote1.TabIndex = 6;
             // 
+<<<<<<< HEAD
+=======
+            // pictureBox9
+            // 
+            pictureBox9.BackgroundImage = (Image)resources.GetObject("pictureBox9.BackgroundImage");
+            pictureBox9.BackgroundImageLayout = ImageLayout.Zoom;
+            pictureBox9.Location = new Point(30, 31);
+            pictureBox9.Margin = new Padding(3, 2, 3, 2);
+            pictureBox9.Name = "pictureBox9";
+            pictureBox9.Size = new Size(23, 22);
+            pictureBox9.TabIndex = 15;
+            pictureBox9.TabStop = false;
+            // 
+>>>>>>> e385144d04efb52f91215f9b76d96ac27893a292
             // frmHome
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);

@@ -33,7 +33,7 @@
     Each data row contains a name, and value. The row also contains a
     type or mimetype. Type corresponds to a .NET class that support
     text/value conversion through the TypeConverter architecture.
-    Classes that don't support this are serialized and stored with the
+    Classes that don't support are serialized and stored with the
     mimetype set.
 
     The mimetype is used for serialized objects, and tells the
@@ -118,16 +118,6 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-<<<<<<< Updated upstream
-  <data name="btnGoBack.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        vwAADr8BOAVTJAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAC6SURBVFhH7dU7
-        CgJBEIThFbySaKap5h5BPIFgLoaK+MKbmHgdzX3kvwwMOBQbzI40CPYHG03RXTDLblU551wBoAVsgCcw
-        1XNTcfmJj7NmzNQsvwMdzZmIyw+yvKc5E3H5/v+WB8A8WR6sgXHDZwS0dXYW4CYFSi11dhbgqpMKLXR2
-        FmAmg0quYPjNFYSXcJsUeAF9zZn6pRI7KTHQnKmar+ED6GrOVCxxTEpcNGMulljF3/FEz51zrok3j6wG
-        KWBP/NIAAAAASUVORK5CYII=
-=======
   <data name="pictureBox11.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAJdJREFUOE+l
@@ -311,7 +301,6 @@
         iVBORw0KGgoAAAANSUhEUgAAAA4AAAAOCAYAAAAfSC3RAAAABGdBTUEAALGPC/xhBQAAAEJJREFUOE9j
         wAX+//9/BYjPQbnEA6AmMIByiQdQfcNCI1DuEkQJSeAcSONlCJskgDuaoApGdnTgAkA9oNDGEXoMDADC
         Zs29bcBNywAAAABJRU5ErkJggg==
->>>>>>> Stashed changes
 </value>
   </data>
 </root>

@@ -39,8 +39,8 @@ namespace GymRoom
 
         private void pictureBox5_Click(object sender, EventArgs e)
         {
-            frmChats frmChats = new frmChats();
-            frmChats.Show();
+            frmMessages messagesForm = new frmMessages();
+            messagesForm.Show();
             this.Hide();
         }
 
@@ -82,49 +82,14 @@ namespace GymRoom
             {
                 quicknote.Text = "Quick Note...";
                 quicknote.ForeColor = Color.Gray;
-<<<<<<< Updated upstream
-
+                return;
             }
 
-            string query = "INSERT INTO Notes (Content) VALUES (@content)";
-
-            using (SqlConnection con = new SqlConnection(connectionString))
-            using (SqlCommand cmd = new SqlCommand(query, con))
-            {
-
-                cmd.Parameters.AddWithValue("@content", quicknote.Text.Trim());
-                con.Open();
-                cmd.ExecuteNonQuery();
-=======
->>>>>>> Stashed changes
-
-            }
-
-
-
-            MessageBox.Show("Nota guardad correctamente.");
-            quicknote.Clear();
-
-            var notesForm = Application.OpenForms["frmNotes"] as frmNotes;
-            notesForm?.ReloadNotes();
-<<<<<<< Updated upstream
-        }
-
-        private void pictureBox2_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("La nota se ha guardado", "Nota registrada", MessageBoxButtons.OK, MessageBoxIcon.Information);
-        }
-=======
-        }
-
-        private void pictureBox2_Click(object sender, EventArgs e)
-        {
             string nota = quicknote.Text.Trim();
-            string rutaArchivo = "quick_notes.txt"; // El archivo se guarda en la carpeta donde está el ejecutable
+            string rutaArchivo = "quick_notes.txt";
 
-            if (string.IsNullOrWhiteSpace(nota) || nota == "Quick Note...")
+            if (nota == "Quick Note...")
             {
-                // Si está vacío, solo restablece el placeholder y sale del método.
                 quicknote.Text = "Quick Note...";
                 quicknote.ForeColor = Color.Gray;
                 MessageBox.Show("No hay contenido válido para guardar.", "Advertencia");
@@ -133,18 +98,46 @@ namespace GymRoom
 
             try
             {
-                // Añade la nota al archivo, seguida de un salto de línea (Environment.NewLine)
-                // El 'true' en StreamWriter indica que se APPENDERÁ al final, sin borrar lo anterior.
                 using (System.IO.StreamWriter file = new System.IO.StreamWriter(rutaArchivo, true))
                 {
-                    // Opcional: añade la fecha y hora para saber cuándo se escribió la nota
+                    file.WriteLine($"[{DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss")}] {nota}");
+                }
+
+                MessageBox.Show("Nota guardada correctamente.", "Éxito");
+                quicknote.Clear();
+
+                var notesForm = Application.OpenForms["frmNotes"] as frmNotes;
+                notesForm?.ReloadNotes();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error al guardar la nota: {ex.Message}", "Error de Archivo");
+            }
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            string nota = quicknote.Text.Trim();
+            string rutaArchivo = "quick_notes.txt";
+
+            if (string.IsNullOrWhiteSpace(nota) || nota == "Quick Note...")
+            {
+                quicknote.Text = "Quick Note...";
+                quicknote.ForeColor = Color.Gray;
+                MessageBox.Show("No hay contenido válido para guardar.", "Advertencia");
+                return;
+            }
+
+            try
+            {
+                using (System.IO.StreamWriter file = new System.IO.StreamWriter(rutaArchivo, true))
+                {
                     file.WriteLine($"[{DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss")}] {nota}");
                 }
 
                 MessageBox.Show("Nota guardada correctamente en el archivo.", "Éxito");
                 quicknote.Clear();
 
-                // Si frmNotes existe y tiene el método, recarga.
                 var notesForm = Application.OpenForms["frmNotes"] as frmNotes;
                 notesForm?.ReloadNotes();
             }
@@ -155,7 +148,6 @@ namespace GymRoom
         }
 
         
->>>>>>> Stashed changes
     }
 }
 

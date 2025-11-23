@@ -482,6 +482,7 @@
             button1.TabIndex = 16;
             button1.Text = "Add a routine";
             button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
             // 
             // button2
             // 
@@ -495,6 +496,7 @@
             button2.TabIndex = 17;
             button2.Text = "Add a meal plan";
             button2.UseVisualStyleBackColor = false;
+            button2.Click += button2_Click;
             // 
             // textBox8
             // 
