@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
+using GymRoomExMachina;
 
 namespace GymRoom
 {
@@ -39,8 +40,8 @@ namespace GymRoom
 
         private void pictureBox5_Click(object sender, EventArgs e)
         {
-            frmMessages messagesForm = new frmMessages();
-            messagesForm.Show();
+            Mychats Mychats  = new Mychats();
+            Mychats.Show();
             this.Hide();
         }
 

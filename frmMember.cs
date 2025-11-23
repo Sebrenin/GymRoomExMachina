@@ -57,5 +57,10 @@ namespace GymRoom
             frmMealtable.Show();
             this.Hide();
         }
+
+        private void frmMember_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

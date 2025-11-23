@@ -92,7 +92,7 @@ namespace GymRoom
 
             _currentNote.Title = wrtNote1.NoteTitle;
             _currentNote.Content = wrtNote1.NoteContent;
-            
+
 
             if (!allNotes.Contains(_currentNote))
                 allNotes.Add(_currentNote);
@@ -105,7 +105,7 @@ namespace GymRoom
 
         }
 
-        
+
 
         // MÉTODO PARA BORRAR LA NOTA ACTUAL
         private void DeleteCurrentNote()
@@ -172,7 +172,7 @@ namespace GymRoom
             // Actualizar contenido desde el editor
             _currentNote.Title = wrtNote1.NoteTitle;
             _currentNote.Content = wrtNote1.NoteContent;
-            
+
 
             // Si la nota NO está en la lista, agregarla
             if (!allNotes.Contains(_currentNote))
@@ -185,13 +185,13 @@ namespace GymRoom
             DisplayNotes();
         }
 
-        
+
         public void ReloadNotes()
         {
             // Aquí va tu código para recargar las notas desde la base de datos.
             // Incluso puede estar vacío de momento:
         }
-        
+
 
         private void flpNotes_Paint(object sender, PaintEventArgs e)
         {
@@ -205,7 +205,7 @@ namespace GymRoom
             this.Hide();
         }
 
-        
+
 
 
         private void richTextBox1_Click(object sender, EventArgs e)
@@ -228,6 +228,11 @@ namespace GymRoom
 
         }
 
-        
+        private void label8_Click_1(object sender, EventArgs e)
+        {
+            frmHome frmHome = new frmHome();
+            frmHome.Show();
+            this.Hide();
+        }
     }
 }

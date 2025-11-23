@@ -37,9 +37,9 @@
             pictureBox10 = new PictureBox();
             flowLayoutPanel1 = new FlowLayoutPanel();
             panel5 = new Panel();
+            deletebtn = new Button();
             buttonSaveNote = new Button();
             wrtNote1 = new GymRoomExMachina.wrtNote();
-            deletebtn = new Button();
             flpNotes.SuspendLayout();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox9).BeginInit();
@@ -80,6 +80,7 @@
             label9.Size = new Size(59, 16);
             label9.TabIndex = 22;
             label9.Text = "My notes";
+            label9.Click += label8_Click_1;
             // 
             // label8
             // 
@@ -90,6 +91,7 @@
             label8.Size = new Size(59, 16);
             label8.TabIndex = 21;
             label8.Text = "Go back";
+            label8.Click += label8_Click_1;
             // 
             // pictureBox9
             // 
@@ -99,6 +101,7 @@
             pictureBox9.Size = new Size(20, 20);
             pictureBox9.TabIndex = 19;
             pictureBox9.TabStop = false;
+            pictureBox9.Click += label8_Click_1;
             // 
             // pictureBox10
             // 
@@ -108,6 +111,7 @@
             pictureBox10.Size = new Size(20, 20);
             pictureBox10.TabIndex = 20;
             pictureBox10.TabStop = false;
+            pictureBox10.Click += label8_Click_1;
             // 
             // flowLayoutPanel1
             // 
@@ -127,6 +131,18 @@
             panel5.Size = new Size(485, 404);
             panel5.TabIndex = 1;
             panel5.Paint += panel5_Paint;
+            // 
+            // deletebtn
+            // 
+            deletebtn.BackColor = Color.White;
+            deletebtn.Font = new Font("Century Gothic", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            deletebtn.Location = new Point(276, 346);
+            deletebtn.Name = "deletebtn";
+            deletebtn.Size = new Size(75, 23);
+            deletebtn.TabIndex = 2;
+            deletebtn.Text = "Delete";
+            deletebtn.UseVisualStyleBackColor = false;
+            deletebtn.Click += deletebtn_Click;
             // 
             // buttonSaveNote
             // 
@@ -148,18 +164,6 @@
             wrtNote1.Name = "wrtNote1";
             wrtNote1.Size = new Size(435, 358);
             wrtNote1.TabIndex = 0;
-            // 
-            // deletebtn
-            // 
-            deletebtn.BackColor = Color.White;
-            deletebtn.Font = new Font("Century Gothic", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            deletebtn.Location = new Point(276, 346);
-            deletebtn.Name = "deletebtn";
-            deletebtn.Size = new Size(75, 23);
-            deletebtn.TabIndex = 2;
-            deletebtn.Text = "Delete";
-            deletebtn.UseVisualStyleBackColor = false;
-            deletebtn.Click += deletebtn_Click;
             // 
             // frmNotes
             // 
