@@ -42,15 +42,12 @@
             profile = new PictureBox();
             chats = new PictureBox();
             members = new PictureBox();
-<<<<<<< Updated upstream
             label7 = new Label();
             label8 = new Label();
             label6 = new Label();
             label5 = new Label();
             pictureBox10 = new PictureBox();
             pictureBox9 = new PictureBox();
-=======
->>>>>>> Stashed changes
             panel1.SuspendLayout();
             panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
@@ -146,10 +143,6 @@
             quicknote.Size = new Size(585, 68);
             quicknote.TabIndex = 0;
             quicknote.Text = "";
-<<<<<<< Updated upstream
-=======
-            //quicknote.TextChanged += quicknote_TextChanged;
->>>>>>> Stashed changes
             // 
             // gotonotes
             // 
@@ -217,7 +210,6 @@
             members.TabStop = false;
             members.Click += pictureBox6_Click;
             // 
-<<<<<<< Updated upstream
             // label7
             // 
             label7.AutoSize = true;
@@ -280,8 +272,6 @@
             pictureBox9.TabIndex = 15;
             pictureBox9.TabStop = false;
             // 
-=======
->>>>>>> Stashed changes
             // frmHome
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
