@@ -32,10 +32,8 @@
             panel1 = new Panel();
             label9 = new Label();
             label8 = new Label();
-            button2 = new Button();
             pictureBox9 = new PictureBox();
             pictureBox10 = new PictureBox();
-            button1 = new Button();
             panel2 = new Panel();
             bodytypecmbo = new ComboBox();
             goalcmbo = new ComboBox();
@@ -62,10 +60,8 @@
             subscapulartxtb = new TextBox();
             panel16 = new Panel();
             biceptxtb = new TextBox();
-            button3 = new Button();
             button4 = new Button();
             button5 = new Button();
-            button6 = new Button();
             dataGridView1 = new DataGridView();
             panel3 = new Panel();
             label1 = new Label();
@@ -92,10 +88,8 @@
             // 
             panel1.Controls.Add(label9);
             panel1.Controls.Add(label8);
-            panel1.Controls.Add(button2);
             panel1.Controls.Add(pictureBox9);
             panel1.Controls.Add(pictureBox10);
-            panel1.Controls.Add(button1);
             panel1.Dock = DockStyle.Top;
             panel1.Location = new Point(0, 0);
             panel1.Name = "panel1";
@@ -125,20 +119,6 @@
             label8.Text = "Go back";
             label8.Click += label8_Click;
             // 
-            // button2
-            // 
-            button2.Anchor = AnchorStyles.None;
-            button2.BackColor = Color.FromArgb(191, 69, 21);
-            button2.Font = new Font("Century Gothic", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button2.ForeColor = Color.White;
-            button2.Location = new Point(591, 10);
-            button2.Name = "button2";
-            button2.Size = new Size(172, 36);
-            button2.TabIndex = 17;
-            button2.Text = "Add a meal plan";
-            button2.UseVisualStyleBackColor = false;
-            button2.Click += button2_Click;
-            // 
             // pictureBox9
             // 
             pictureBox9.Anchor = AnchorStyles.None;
@@ -158,20 +138,6 @@
             pictureBox10.Size = new Size(20, 20);
             pictureBox10.TabIndex = 9;
             pictureBox10.TabStop = false;
-            // 
-            // button1
-            // 
-            button1.Anchor = AnchorStyles.None;
-            button1.BackColor = Color.FromArgb(89, 11, 11);
-            button1.Font = new Font("Century Gothic", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button1.ForeColor = Color.White;
-            button1.Location = new Point(414, 10);
-            button1.Name = "button1";
-            button1.Size = new Size(171, 36);
-            button1.TabIndex = 16;
-            button1.Text = "Add a routine";
-            button1.UseVisualStyleBackColor = false;
-            button1.Click += button1_Click;
             // 
             // panel2
             // 
@@ -252,9 +218,9 @@
             panel4.Anchor = AnchorStyles.None;
             panel4.BackColor = Color.FromArgb(192, 190, 190);
             panel4.Controls.Add(weightxtb);
-            panel4.Location = new Point(37, 261);
+            panel4.Location = new Point(32, 261);
             panel4.Name = "panel4";
-            panel4.Size = new Size(106, 32);
+            panel4.Size = new Size(111, 32);
             panel4.TabIndex = 3;
             // 
             // weightxtb
@@ -263,7 +229,7 @@
             weightxtb.BackColor = Color.FromArgb(192, 190, 190);
             weightxtb.BorderStyle = BorderStyle.None;
             weightxtb.Font = new Font("Century Gothic", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            weightxtb.Location = new Point(6, 6);
+            weightxtb.Location = new Point(8, 6);
             weightxtb.Name = "weightxtb";
             weightxtb.Size = new Size(96, 16);
             weightxtb.TabIndex = 0;
@@ -365,9 +331,9 @@
             panel12.Anchor = AnchorStyles.None;
             panel12.BackColor = Color.FromArgb(217, 217, 217);
             panel12.Controls.Add(waistxtb);
-            panel12.Location = new Point(37, 211);
+            panel12.Location = new Point(32, 211);
             panel12.Name = "panel12";
-            panel12.Size = new Size(106, 32);
+            panel12.Size = new Size(111, 32);
             panel12.TabIndex = 11;
             // 
             // waistxtb
@@ -376,7 +342,7 @@
             waistxtb.BackColor = Color.FromArgb(217, 217, 217);
             waistxtb.BorderStyle = BorderStyle.None;
             waistxtb.Font = new Font("Century Gothic", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            waistxtb.Location = new Point(9, 6);
+            waistxtb.Location = new Point(11, 6);
             waistxtb.Name = "waistxtb";
             waistxtb.Size = new Size(93, 16);
             waistxtb.TabIndex = 6;
@@ -476,20 +442,10 @@
             biceptxtb.Text = "Bicep";
             biceptxtb.TextAlign = HorizontalAlignment.Center;
             // 
-            // button3
-            // 
-            button3.Anchor = AnchorStyles.None;
-            button3.Location = new Point(37, 342);
-            button3.Name = "button3";
-            button3.Size = new Size(75, 23);
-            button3.TabIndex = 12;
-            button3.Text = "Delete";
-            button3.UseVisualStyleBackColor = true;
-            // 
             // button4
             // 
             button4.Anchor = AnchorStyles.None;
-            button4.Location = new Point(37, 404);
+            button4.Location = new Point(32, 380);
             button4.Name = "button4";
             button4.Size = new Size(75, 23);
             button4.TabIndex = 13;
@@ -499,22 +455,12 @@
             // button5
             // 
             button5.Anchor = AnchorStyles.None;
-            button5.Location = new Point(37, 371);
+            button5.Location = new Point(32, 333);
             button5.Name = "button5";
             button5.Size = new Size(75, 23);
             button5.TabIndex = 14;
             button5.Text = "Update";
             button5.UseVisualStyleBackColor = true;
-            // 
-            // button6
-            // 
-            button6.Anchor = AnchorStyles.None;
-            button6.Location = new Point(37, 313);
-            button6.Name = "button6";
-            button6.Size = new Size(75, 23);
-            button6.TabIndex = 15;
-            button6.Text = "Add";
-            button6.UseVisualStyleBackColor = true;
             // 
             // dataGridView1
             // 
@@ -529,9 +475,9 @@
             panel3.Anchor = AnchorStyles.None;
             panel3.BackColor = Color.Black;
             panel3.Controls.Add(label1);
-            panel3.Location = new Point(412, 267);
+            panel3.Location = new Point(412, 261);
             panel3.Name = "panel3";
-            panel3.Size = new Size(351, 26);
+            panel3.Size = new Size(351, 32);
             panel3.TabIndex = 11;
             // 
             // label1
@@ -553,9 +499,7 @@
             ClientSize = new Size(800, 450);
             Controls.Add(button4);
             Controls.Add(button5);
-            Controls.Add(button6);
             Controls.Add(panel3);
-            Controls.Add(button3);
             Controls.Add(dataGridView1);
             Controls.Add(panel5);
             Controls.Add(panel13);
@@ -631,16 +575,12 @@
         private TextBox heightxtb;
         private TextBox fatxtb;
         private TextBox muscletxtb;
-        private Button button1;
         private Label label2;
-        private Button button2;
         private TextBox waistxtb;
         private TextBox textBox9;
         private TextBox iliocrestaltxtb;
         private TextBox subscapulartxtb;
         private TextBox biceptxtb;
-        private Button button3;
-        private Button button6;
         private Button button5;
         private Button button4;
         private ComboBox bodytypecmbo;

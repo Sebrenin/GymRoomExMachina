@@ -41,30 +41,28 @@
             panel1 = new Panel();
             textBox1 = new TextBox();
             panel5 = new Panel();
-            panel2 = new Panel();
-            textBox2 = new TextBox();
-            panel6 = new Panel();
-            panel3 = new Panel();
-            textBox3 = new TextBox();
-            panel7 = new Panel();
+            dataGridView1 = new DataGridView();
+            button4 = new Button();
+            button5 = new Button();
+            button6 = new Button();
+            button3 = new Button();
             panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox10).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox9).BeginInit();
             panel1.SuspendLayout();
-            panel2.SuspendLayout();
-            panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
             // label1
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Century Gothic", 27.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(314, 61);
+            label1.Location = new Point(330, 60);
             label1.Name = "label1";
-            label1.Size = new Size(168, 44);
+            label1.Size = new Size(166, 44);
             label1.TabIndex = 1;
-            label1.Text = "Routines";
+            label1.Text = "Workout";
             // 
             // panel4
             // 
@@ -88,7 +86,7 @@
             label2.Name = "label2";
             label2.Size = new Size(55, 16);
             label2.TabIndex = 28;
-            label2.Text = "Routines";
+            label2.Text = "Workout";
             // 
             // pictureBox1
             // 
@@ -159,7 +157,7 @@
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(100, 15);
             textBox1.TabIndex = 6;
-            textBox1.Text = "Routine name";
+            textBox1.Text = "Workout";
             textBox1.TextAlign = HorizontalAlignment.Center;
             // 
             // panel5
@@ -170,75 +168,65 @@
             panel5.Size = new Size(173, 244);
             panel5.TabIndex = 5;
             // 
-            // panel2
+            // dataGridView1
             // 
-            panel2.BackColor = Color.FromArgb(89, 11, 11);
-            panel2.Controls.Add(textBox2);
-            panel2.Controls.Add(panel6);
-            panel2.Location = new Point(297, 132);
-            panel2.Name = "panel2";
-            panel2.Size = new Size(200, 292);
-            panel2.TabIndex = 5;
+            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView1.Location = new Point(256, 132);
+            dataGridView1.Name = "dataGridView1";
+            dataGridView1.Size = new Size(414, 292);
+            dataGridView1.TabIndex = 5;
+            dataGridView1.CellContentClick += dataGridView1_CellContentClick;
             // 
-            // textBox2
+            // button4
             // 
-            textBox2.BackColor = Color.FromArgb(89, 11, 11);
-            textBox2.BorderStyle = BorderStyle.None;
-            textBox2.Font = new Font("Century Gothic", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            textBox2.ForeColor = Color.White;
-            textBox2.Location = new Point(55, 3);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(100, 15);
-            textBox2.TabIndex = 7;
-            textBox2.Text = "Routine name";
-            textBox2.TextAlign = HorizontalAlignment.Center;
+            button4.Anchor = AnchorStyles.None;
+            button4.Location = new Point(700, 328);
+            button4.Name = "button4";
+            button4.Size = new Size(75, 23);
+            button4.TabIndex = 17;
+            button4.Text = "Clear all";
+            button4.UseVisualStyleBackColor = true;
             // 
-            // panel6
+            // button5
             // 
-            panel6.BackColor = Color.FromArgb(217, 217, 217);
-            panel6.Location = new Point(12, 31);
-            panel6.Name = "panel6";
-            panel6.Size = new Size(173, 244);
-            panel6.TabIndex = 6;
+            button5.Anchor = AnchorStyles.None;
+            button5.Location = new Point(700, 282);
+            button5.Name = "button5";
+            button5.Size = new Size(75, 23);
+            button5.TabIndex = 18;
+            button5.Text = "Update";
+            button5.UseVisualStyleBackColor = true;
             // 
-            // panel3
+            // button6
             // 
-            panel3.BackColor = Color.FromArgb(89, 11, 11);
-            panel3.Controls.Add(textBox3);
-            panel3.Controls.Add(panel7);
-            panel3.Location = new Point(569, 132);
-            panel3.Name = "panel3";
-            panel3.Size = new Size(200, 292);
-            panel3.TabIndex = 5;
+            button6.Anchor = AnchorStyles.None;
+            button6.Location = new Point(700, 179);
+            button6.Name = "button6";
+            button6.Size = new Size(75, 23);
+            button6.TabIndex = 19;
+            button6.Text = "Add";
+            button6.UseVisualStyleBackColor = true;
             // 
-            // textBox3
+            // button3
             // 
-            textBox3.BackColor = Color.FromArgb(89, 11, 11);
-            textBox3.BorderStyle = BorderStyle.None;
-            textBox3.Font = new Font("Century Gothic", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            textBox3.ForeColor = Color.White;
-            textBox3.Location = new Point(57, 3);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(100, 15);
-            textBox3.TabIndex = 8;
-            textBox3.Text = "Routine name";
-            textBox3.TextAlign = HorizontalAlignment.Center;
-            // 
-            // panel7
-            // 
-            panel7.BackColor = Color.FromArgb(217, 217, 217);
-            panel7.Location = new Point(14, 31);
-            panel7.Name = "panel7";
-            panel7.Size = new Size(173, 244);
-            panel7.TabIndex = 6;
+            button3.Anchor = AnchorStyles.None;
+            button3.Location = new Point(700, 230);
+            button3.Name = "button3";
+            button3.Size = new Size(75, 23);
+            button3.TabIndex = 16;
+            button3.Text = "Delete";
+            button3.UseVisualStyleBackColor = true;
             // 
             // frmRoutine
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(panel3);
-            Controls.Add(panel2);
+            Controls.Add(button4);
+            Controls.Add(button5);
+            Controls.Add(button6);
+            Controls.Add(button3);
+            Controls.Add(dataGridView1);
             Controls.Add(panel1);
             Controls.Add(panel4);
             Controls.Add(label1);
@@ -251,10 +239,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox9).EndInit();
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
-            panel2.ResumeLayout(false);
-            panel2.PerformLayout();
-            panel3.ResumeLayout(false);
-            panel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -265,18 +250,17 @@
         private Panel panel4;
         private Panel panel1;
         private Panel panel5;
-        private Panel panel2;
-        private Panel panel3;
         private TextBox textBox1;
-        private TextBox textBox2;
-        private Panel panel6;
-        private TextBox textBox3;
-        private Panel panel7;
         private Label label9;
         private Label label8;
         private PictureBox pictureBox10;
         private PictureBox pictureBox9;
         private Label label2;
         private PictureBox pictureBox1;
+        private DataGridView dataGridView1;
+        private Button button4;
+        private Button button5;
+        private Button button6;
+        private Button button3;
     }
 }

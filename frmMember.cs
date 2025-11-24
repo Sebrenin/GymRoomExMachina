@@ -39,8 +39,8 @@ namespace GymRoomExMachina
 
         private void label8_Click(object sender, EventArgs e)
         {
-            frmMycostumers frmMycostumers = new frmMycostumers();
-            frmMycostumers.Show();
+            frmHome frmHome = new frmHome();
+            frmHome.Show();
             this.Hide();
         }
 

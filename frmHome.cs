@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
+using GymRoom;
 
 
 namespace GymRoomExMachina
@@ -64,8 +65,8 @@ namespace GymRoomExMachina
 
         private void pictureBox6_Click(object sender, EventArgs e)
         {
-            frmMycostumers frmMycostumers = new frmMycostumers();
-            frmMycostumers.Show();
+            frmMember frmMember = new frmMember();
+            frmMember.Show();
             this.Hide();
         }
 
@@ -73,6 +74,20 @@ namespace GymRoomExMachina
         {
             frmNotes frmNotes = new frmNotes();
             frmNotes.Show();
+            this.Hide();
+        }
+
+        private void pictureBox6_Click_1(object sender, EventArgs e)
+        {
+            frmRoutine frmRoutine = new frmRoutine();
+            frmRoutine.Show();
+            this.Hide();
+        }
+
+        private void pictureBox5_Click_1(object sender, EventArgs e)
+        {
+            frmMealtable frmMealtable = new frmMealtable();
+            frmMealtable.Show();
             this.Hide();
         }
     }
