@@ -12,69 +12,69 @@ using System.IO;
 
 
 namespace GymRoomExMachina
-
-public partial class frmHome : Form
 {
-    private string connectionString = "Server=localhost;Database=GymRoomDB;Trusted_Connection=True;";
-    public frmHome()
+
+    public partial class frmHome : Form
     {
-        InitializeComponent();
-    }
+        private string connectionString = "Server=localhost;Database=GymRoomDB;Trusted_Connection=True;";
+        public frmHome()
+        {
+            InitializeComponent();
+        }
 
 
 
-    private void label1_Click(object sender, EventArgs e)
-    {
+        private void label1_Click(object sender, EventArgs e)
+        {
 
-    }
+        }
 
-    private void panel3_Paint(object sender, PaintEventArgs e)
-    {
+        private void panel3_Paint(object sender, PaintEventArgs e)
+        {
 
-    }
+        }
 
-    private void label3_Click(object sender, EventArgs e)
-    {
+        private void label3_Click(object sender, EventArgs e)
+        {
 
-    }
+        }
 
-    private void pictureBox5_Click(object sender, EventArgs e)
-    {
-        Mychats Mychats  = new Mychats();
-        Mychats.Show();
-        this.Hide();
-    }
+        private void pictureBox5_Click(object sender, EventArgs e)
+        {
+            
+        }
 
-    private void frmHome_Load(object sender, EventArgs e)
-    {
+        private void frmHome_Load(object sender, EventArgs e)
+        {
 
-    }
+        }
 
-    private void pictureBox1_Click(object sender, EventArgs e)
-    {
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
 
-    }
+        }
 
-    //go to profile
-    private void profile_Click(object sender, EventArgs e)
-    {
-        frmCoachProfile frmCoachProfile = new frmCoachProfile();
-        frmCoachProfile.Show();
-        this.Hide();
-    }
+        //go to profile
+        private void profile_Click(object sender, EventArgs e)
+        {
+            frmCoachProfile frmCoachProfile = new frmCoachProfile();
+            frmCoachProfile.Show();
+            this.Hide();
+        }
 
-    private void pictureBox6_Click(object sender, EventArgs e)
-    {
-        frmMycostumers frmMycostumers = new frmMycostumers();
-        frmMycostumers.Show();
-        this.Hide();
-    }
+        private void pictureBox6_Click(object sender, EventArgs e)
+        {
+            frmMycostumers frmMycostumers = new frmMycostumers();
+            frmMycostumers.Show();
+            this.Hide();
+        }
 
-    private void pictureBox4_Click(object sender, EventArgs e)
-    {
-        frmNotes frmNotes = new frmNotes();
-        frmNotes.Show();
-        this.Hide();
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+            frmNotes frmNotes = new frmNotes();
+            frmNotes.Show();
+            this.Hide();
+        }
     }
 }
 

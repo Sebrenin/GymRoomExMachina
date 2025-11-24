@@ -32,9 +32,12 @@
             panel1 = new Panel();
             label9 = new Label();
             label8 = new Label();
+            button2 = new Button();
             pictureBox9 = new PictureBox();
             pictureBox10 = new PictureBox();
+            button1 = new Button();
             panel2 = new Panel();
+            bodytypecmbo = new ComboBox();
             goalcmbo = new ComboBox();
             agetxtb = new TextBox();
             nametxtb = new TextBox();
@@ -50,22 +53,19 @@
             panel11 = new Panel();
             label2 = new Label();
             panel12 = new Panel();
-            panel13 = new Panel();
-            panel14 = new Panel();
-            panel15 = new Panel();
-            panel16 = new Panel();
-            button1 = new Button();
-            button2 = new Button();
             waistxtb = new TextBox();
-            textBox9 = new TextBox();
+            panel13 = new Panel();
             iliocrestaltxtb = new TextBox();
+            panel14 = new Panel();
+            textBox9 = new TextBox();
+            panel15 = new Panel();
             subscapulartxtb = new TextBox();
+            panel16 = new Panel();
             biceptxtb = new TextBox();
             button3 = new Button();
             button4 = new Button();
             button5 = new Button();
             button6 = new Button();
-            bodytypecmbo = new ComboBox();
             dataGridView1 = new DataGridView();
             panel3 = new Panel();
             label1 = new Label();
@@ -125,6 +125,20 @@
             label8.Text = "Go back";
             label8.Click += label8_Click;
             // 
+            // button2
+            // 
+            button2.Anchor = AnchorStyles.None;
+            button2.BackColor = Color.FromArgb(191, 69, 21);
+            button2.Font = new Font("Century Gothic", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button2.ForeColor = Color.White;
+            button2.Location = new Point(591, 10);
+            button2.Name = "button2";
+            button2.Size = new Size(172, 36);
+            button2.TabIndex = 17;
+            button2.Text = "Add a meal plan";
+            button2.UseVisualStyleBackColor = false;
+            button2.Click += button2_Click;
+            // 
             // pictureBox9
             // 
             pictureBox9.Anchor = AnchorStyles.None;
@@ -145,6 +159,20 @@
             pictureBox10.TabIndex = 9;
             pictureBox10.TabStop = false;
             // 
+            // button1
+            // 
+            button1.Anchor = AnchorStyles.None;
+            button1.BackColor = Color.FromArgb(89, 11, 11);
+            button1.Font = new Font("Century Gothic", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button1.ForeColor = Color.White;
+            button1.Location = new Point(414, 10);
+            button1.Name = "button1";
+            button1.Size = new Size(171, 36);
+            button1.TabIndex = 16;
+            button1.Text = "Add a routine";
+            button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
+            // 
             // panel2
             // 
             panel2.Anchor = AnchorStyles.None;
@@ -158,6 +186,17 @@
             panel2.Name = "panel2";
             panel2.Size = new Size(731, 71);
             panel2.TabIndex = 1;
+            // 
+            // bodytypecmbo
+            // 
+            bodytypecmbo.BackColor = Color.FromArgb(192, 190, 190);
+            bodytypecmbo.Font = new Font("Century Gothic", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            bodytypecmbo.FormattingEnabled = true;
+            bodytypecmbo.Location = new Point(445, 26);
+            bodytypecmbo.Name = "bodytypecmbo";
+            bodytypecmbo.Size = new Size(121, 24);
+            bodytypecmbo.TabIndex = 6;
+            bodytypecmbo.Text = "    Body type";
             // 
             // goalcmbo
             // 
@@ -331,74 +370,6 @@
             panel12.Size = new Size(106, 32);
             panel12.TabIndex = 11;
             // 
-            // panel13
-            // 
-            panel13.Anchor = AnchorStyles.None;
-            panel13.BackColor = Color.FromArgb(217, 217, 217);
-            panel13.Controls.Add(iliocrestaltxtb);
-            panel13.Location = new Point(161, 211);
-            panel13.Name = "panel13";
-            panel13.Size = new Size(105, 32);
-            panel13.TabIndex = 12;
-            // 
-            // panel14
-            // 
-            panel14.Anchor = AnchorStyles.None;
-            panel14.BackColor = Color.FromArgb(217, 217, 217);
-            panel14.Controls.Add(textBox9);
-            panel14.Location = new Point(412, 211);
-            panel14.Name = "panel14";
-            panel14.Size = new Size(105, 32);
-            panel14.TabIndex = 13;
-            // 
-            // panel15
-            // 
-            panel15.Anchor = AnchorStyles.None;
-            panel15.BackColor = Color.FromArgb(217, 217, 217);
-            panel15.Controls.Add(subscapulartxtb);
-            panel15.Location = new Point(289, 211);
-            panel15.Name = "panel15";
-            panel15.Size = new Size(105, 32);
-            panel15.TabIndex = 14;
-            // 
-            // panel16
-            // 
-            panel16.Anchor = AnchorStyles.None;
-            panel16.BackColor = Color.FromArgb(217, 217, 217);
-            panel16.Controls.Add(biceptxtb);
-            panel16.Location = new Point(532, 211);
-            panel16.Name = "panel16";
-            panel16.Size = new Size(105, 32);
-            panel16.TabIndex = 15;
-            // 
-            // button1
-            // 
-            button1.Anchor = AnchorStyles.None;
-            button1.BackColor = Color.FromArgb(89, 11, 11);
-            button1.Font = new Font("Century Gothic", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button1.ForeColor = Color.White;
-            button1.Location = new Point(414, 10);
-            button1.Name = "button1";
-            button1.Size = new Size(171, 36);
-            button1.TabIndex = 16;
-            button1.Text = "Add a routine";
-            button1.UseVisualStyleBackColor = false;
-            button1.Click += button1_Click;
-            // 
-            // button2
-            // 
-            button2.Anchor = AnchorStyles.None;
-            button2.BackColor = Color.FromArgb(191, 69, 21);
-            button2.Font = new Font("Century Gothic", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button2.ForeColor = Color.White;
-            button2.Location = new Point(591, 10);
-            button2.Name = "button2";
-            button2.Size = new Size(172, 36);
-            button2.TabIndex = 17;
-            button2.Text = "Add a meal plan";
-            button2.UseVisualStyleBackColor = false;
-            button2.Click += button2_Click;
-            // 
             // waistxtb
             // 
             waistxtb.Anchor = AnchorStyles.None;
@@ -411,6 +382,39 @@
             waistxtb.TabIndex = 6;
             waistxtb.Text = "Waist";
             waistxtb.TextAlign = HorizontalAlignment.Center;
+            // 
+            // panel13
+            // 
+            panel13.Anchor = AnchorStyles.None;
+            panel13.BackColor = Color.FromArgb(217, 217, 217);
+            panel13.Controls.Add(iliocrestaltxtb);
+            panel13.Location = new Point(161, 211);
+            panel13.Name = "panel13";
+            panel13.Size = new Size(105, 32);
+            panel13.TabIndex = 12;
+            // 
+            // iliocrestaltxtb
+            // 
+            iliocrestaltxtb.Anchor = AnchorStyles.None;
+            iliocrestaltxtb.BackColor = Color.FromArgb(217, 217, 217);
+            iliocrestaltxtb.BorderStyle = BorderStyle.None;
+            iliocrestaltxtb.Font = new Font("Century Gothic", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            iliocrestaltxtb.Location = new Point(6, 6);
+            iliocrestaltxtb.Name = "iliocrestaltxtb";
+            iliocrestaltxtb.Size = new Size(96, 16);
+            iliocrestaltxtb.TabIndex = 19;
+            iliocrestaltxtb.Text = "Iliocrestal";
+            iliocrestaltxtb.TextAlign = HorizontalAlignment.Center;
+            // 
+            // panel14
+            // 
+            panel14.Anchor = AnchorStyles.None;
+            panel14.BackColor = Color.FromArgb(217, 217, 217);
+            panel14.Controls.Add(textBox9);
+            panel14.Location = new Point(412, 211);
+            panel14.Name = "panel14";
+            panel14.Size = new Size(105, 32);
+            panel14.TabIndex = 13;
             // 
             // textBox9
             // 
@@ -426,18 +430,15 @@
             textBox9.TextAlign = HorizontalAlignment.Center;
             textBox9.TextChanged += textBox9_TextChanged;
             // 
-            // iliocrestaltxtb
+            // panel15
             // 
-            iliocrestaltxtb.Anchor = AnchorStyles.None;
-            iliocrestaltxtb.BackColor = Color.FromArgb(217, 217, 217);
-            iliocrestaltxtb.BorderStyle = BorderStyle.None;
-            iliocrestaltxtb.Font = new Font("Century Gothic", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            iliocrestaltxtb.Location = new Point(6, 6);
-            iliocrestaltxtb.Name = "iliocrestaltxtb";
-            iliocrestaltxtb.Size = new Size(96, 16);
-            iliocrestaltxtb.TabIndex = 19;
-            iliocrestaltxtb.Text = "Iliocrestal";
-            iliocrestaltxtb.TextAlign = HorizontalAlignment.Center;
+            panel15.Anchor = AnchorStyles.None;
+            panel15.BackColor = Color.FromArgb(217, 217, 217);
+            panel15.Controls.Add(subscapulartxtb);
+            panel15.Location = new Point(289, 211);
+            panel15.Name = "panel15";
+            panel15.Size = new Size(105, 32);
+            panel15.TabIndex = 14;
             // 
             // subscapulartxtb
             // 
@@ -451,6 +452,16 @@
             subscapulartxtb.TabIndex = 20;
             subscapulartxtb.Text = "Subscapular";
             subscapulartxtb.TextAlign = HorizontalAlignment.Center;
+            // 
+            // panel16
+            // 
+            panel16.Anchor = AnchorStyles.None;
+            panel16.BackColor = Color.FromArgb(217, 217, 217);
+            panel16.Controls.Add(biceptxtb);
+            panel16.Location = new Point(532, 211);
+            panel16.Name = "panel16";
+            panel16.Size = new Size(105, 32);
+            panel16.TabIndex = 15;
             // 
             // biceptxtb
             // 
@@ -504,17 +515,6 @@
             button6.TabIndex = 15;
             button6.Text = "Add";
             button6.UseVisualStyleBackColor = true;
-            // 
-            // bodytypecmbo
-            // 
-            bodytypecmbo.BackColor = Color.FromArgb(192, 190, 190);
-            bodytypecmbo.Font = new Font("Century Gothic", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            bodytypecmbo.FormattingEnabled = true;
-            bodytypecmbo.Location = new Point(445, 35);
-            bodytypecmbo.Name = "bodytypecmbo";
-            bodytypecmbo.Size = new Size(121, 24);
-            bodytypecmbo.TabIndex = 6;
-            bodytypecmbo.Text = "    Body type";
             // 
             // dataGridView1
             // 

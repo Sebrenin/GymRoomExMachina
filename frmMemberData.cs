@@ -25,7 +25,7 @@ namespace GymRoomExMachina
         private void CargarDatosMiembro()
         {
             // Obtener data
-            var lstMembers = _serviceMember.GetAllMembers();
+            // var lstMembers = _serviceMember.GetAllMembers();
         }
 
         private void btnGoBack_MouseEnter(object sender, EventArgs e)

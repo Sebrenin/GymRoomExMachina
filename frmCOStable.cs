@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace GymRoom
+namespace GymRoomExMachina
 {
     public partial class frmCOStable : Form
     {
@@ -24,8 +24,8 @@ namespace GymRoom
 
         private void label8_Click(object sender, EventArgs e)
         {
-            frmMycostumers frmMycostumers = new frmMycostumers();
-            frmMycostumers.Show();
+            frmMycostumers form = new frmMycostumers();
+            form.Show();
             this.Hide();
         }
     }

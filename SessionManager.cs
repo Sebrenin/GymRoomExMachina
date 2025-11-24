@@ -6,14 +6,12 @@ using System.Threading.Tasks;
 
 namespace GymRoomExMachina
 {
-    namespace PetitPlannerIntegrador
+    public static class SessionManager
     {
-        public static class SessionManager
-        {
-            public static string CurrentUserId { get; private set; }
+        public static string CurrentUserId { get; private set; }
 
-            public static void StartSession(string userId)
-            {
+        public static void StartSession(string userId)
+        {
                 CurrentUserId = userId;
             }
 
@@ -22,6 +20,4 @@ namespace GymRoomExMachina
                 CurrentUserId = null;
             }
         }
-
-    }
 }
