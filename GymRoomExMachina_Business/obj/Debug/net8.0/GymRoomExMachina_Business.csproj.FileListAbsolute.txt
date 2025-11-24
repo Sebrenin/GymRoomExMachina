@@ -1,0 +1,17 @@
+C:\Users\USUARIO\Source\Repos\GymRoomExMachina_Business\bin\Debug\net8.0\GymRoomExMachina_Business.deps.json
+C:\Users\USUARIO\Source\Repos\GymRoomExMachina_Business\bin\Debug\net8.0\GymRoomExMachina_Business.runtimeconfig.json
+C:\Users\USUARIO\Source\Repos\GymRoomExMachina_Business\bin\Debug\net8.0\GymRoomExMachina_Business.dll
+C:\Users\USUARIO\Source\Repos\GymRoomExMachina_Business\bin\Debug\net8.0\GymRoomExMachina_Business.pdb
+C:\Users\USUARIO\Source\Repos\GymRoomExMachina_Business\bin\Debug\net8.0\GymRoomExMachina_Data.dll
+C:\Users\USUARIO\Source\Repos\GymRoomExMachina_Business\bin\Debug\net8.0\GymRoomExMachina_Data.pdb
+C:\Users\USUARIO\Source\Repos\GymRoomExMachina_Business\obj\Debug\net8.0\GymRoomExMachina_Business.csproj.AssemblyReference.cache
+C:\Users\USUARIO\Source\Repos\GymRoomExMachina_Business\obj\Debug\net8.0\GymRoomExMachina_Business.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\USUARIO\Source\Repos\GymRoomExMachina_Business\obj\Debug\net8.0\GymRoomExMachina_Business.AssemblyInfoInputs.cache
+C:\Users\USUARIO\Source\Repos\GymRoomExMachina_Business\obj\Debug\net8.0\GymRoomExMachina_Business.AssemblyInfo.cs
+C:\Users\USUARIO\Source\Repos\GymRoomExMachina_Business\obj\Debug\net8.0\GymRoomExMachina_Business.csproj.CoreCompileInputs.cache
+C:\Users\USUARIO\Source\Repos\GymRoomExMachina_Business\obj\Debug\net8.0\GymRoomE.00466FCA.Up2Date
+C:\Users\USUARIO\Source\Repos\GymRoomExMachina_Business\obj\Debug\net8.0\GymRoomExMachina_Business.dll
+C:\Users\USUARIO\Source\Repos\GymRoomExMachina_Business\obj\Debug\net8.0\refint\GymRoomExMachina_Business.dll
+C:\Users\USUARIO\Source\Repos\GymRoomExMachina_Business\obj\Debug\net8.0\GymRoomExMachina_Business.pdb
+C:\Users\USUARIO\Source\Repos\GymRoomExMachina_Business\obj\Debug\net8.0\GymRoomExMachina_Business.genruntimeconfig.cache
+C:\Users\USUARIO\Source\Repos\GymRoomExMachina_Business\obj\Debug\net8.0\ref\GymRoomExMachina_Business.dll
