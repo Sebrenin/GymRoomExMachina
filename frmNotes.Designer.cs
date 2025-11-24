@@ -1,4 +1,4 @@
-﻿namespace GymRoom
+﻿namespace GymRoomExMachina
 {
     partial class frmNotes
     {

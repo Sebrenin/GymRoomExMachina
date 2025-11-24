@@ -1,4 +1,5 @@
-﻿namespace GymRoom
+﻿namespace GymRoomExMachina
+
 {
     partial class frmRoutine
     {

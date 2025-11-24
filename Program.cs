@@ -1,4 +1,4 @@
-using GymRoom;
+
 
 namespace GymRoomExMachina
 {
@@ -13,7 +13,7 @@ namespace GymRoomExMachina
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
-            Application.Run(new Mychats());
+         Application.Run(new frmInicio());
         }
     }
 }

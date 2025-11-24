@@ -1,6 +1,6 @@
 
 
-﻿namespace GymRoom
+namespace GymRoomExMachina
 
 {
     partial class frmLogin

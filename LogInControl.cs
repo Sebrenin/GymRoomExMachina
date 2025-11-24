@@ -9,7 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace GymRoom
+namespace GymRoomExMachina
 {
 
     public partial class LogInControl : UserControl
